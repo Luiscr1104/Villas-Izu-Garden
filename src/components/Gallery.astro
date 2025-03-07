@@ -1,0 +1,98 @@
+---
+import gallery1 from '@/assets/gallery1.png';
+import gallery2 from '@/assets/gallery2.png';
+import gallery3 from '@/assets/gallery3.png';
+import gallery4 from '@/assets/gallery4.png';
+import gallery5 from '@/assets/gallery5.png';
+
+---
+
+<section id="gallery" class="py-20 bg-[#796446]">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-serif font-bold text-[#FFF0DA] mb-4">Galería</h2>
+        <p class="max-w-2xl mx-auto text-lg text-[#FFF0DA]">
+          Explora nuestra galería y déjate inspirar por la belleza de Villas Izu Garden.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="relative group overflow-hidden rounded-lg">
+          <img 
+            src={gallery1.src}
+            alt="Villas Izu Garden Exterior" 
+            class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <p class="text-[#FFF0DA] font-medium text-lg">Exteriores de Villa Sakura</p>
+          </div>
+        </div>
+        
+        <div class="relative group overflow-hidden rounded-lg">
+          <img 
+          src={gallery2.src}
+            alt="Villas Izu Garden Pool" 
+            class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <p class="text-[#FFF0DA] font-medium text-lg">Piscina Infinita</p>
+          </div>
+        </div>
+        
+        <div class="relative group overflow-hidden rounded-lg">
+          <img 
+            src={gallery3.src}
+            alt="Villas Izu Garden Interior" 
+            class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <p class="text-[#FFF0DA] font-medium text-lg">Sala de Estar</p>
+          </div>
+        </div>
+        
+        <div class="relative group overflow-hidden rounded-lg">
+          <img 
+            src={gallery4.src}
+            alt="Villas Izu Garden Bedroom" 
+            class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <p class="text-[#FFF0DA] font-medium text-lg">Habitación Principal</p>
+          </div>
+        </div>
+        
+        <div class="relative group overflow-hidden rounded-lg">
+          <img 
+            src={gallery5.src}
+            alt="Villas Izu Garden Restaurant" 
+            class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <p class="text-[#FFF0DA] font-medium text-lg">Restaurante</p>
+          </div>
+        </div>
+        
+        <div class="relative group overflow-hidden rounded-lg">
+          <img 
+            src={gallery1.src}
+            alt="Villas Izu Garden Spa" 
+            class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <p class="text-[#FFF0DA] font-medium text-lg">Spa y Bienestar</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12">
+        <a 
+          href="#" 
+          class="inline-block border-2 border-[#FFF0DA] text-[#FFF0DA] px-6 py-3 rounded-lg hover:bg-[#FFF0DA]/10 transition-colors"
+        >
+          Ver galería completa
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  

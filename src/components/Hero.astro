@@ -1,0 +1,46 @@
+---
+import villaImage from "@/assets/villas.jpg";
+import logo2 from "@/assets/logo2.png";
+---
+
+<section class="relative pt-20 h-screen flex items-center">
+    <div class="absolute inset-0 z-0">
+        <img 
+          src={villaImage.src} 
+          alt="Villas Izu Garden" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-[#796446]/40"></div>
+      </div>
+    
+    <div class="container mx-auto px-4 z-10 text-center">
+        <!-- Agregar el logo aquí -->
+        <img 
+        src={logo2.src} 
+        alt="Logo Villas Izu Garden"
+        class="mx-auto w-36 h-auto mb-4"
+        />
+      <h1 class="text-4xl md:text-6xl font-serif font-bold text-primary-light mb-6">
+        Villas Izu Garden
+      </h1>
+      <p class="text-xl md:text-2xl text-primary-light mb-8 max-w-2xl mx-auto">
+        Una experiencia de lujo en perfecta armonía con la naturaleza
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a 
+          href="#availability" 
+          class="bg-[#C69349] text-primary-light px-8 py-3 rounded font-medium hover:bg-[#C69349]/90 transition-colors"
+        >
+          Reservar Ahora
+        </a>
+        <a 
+          href="#villas" 
+          class="bg-transparent border-2 border-primary-light text-primary-light px-8 py-3 rounded font-medium hover:bg-primary-light/10 transition-colors"
+        >
+          Explorar Villas
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
