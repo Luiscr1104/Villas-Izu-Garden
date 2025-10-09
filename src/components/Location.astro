@@ -1,0 +1,196 @@
+<section id="location" class="py-20 bg-[#FFF0DA]">
+  <div class="container mx-auto px-4">
+    <!-- Title Section -->
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-3xl font-serif font-bold text-[#796446] mb-4">Nuestra Ubicación</h2>
+      <div class="w-24 h-1 bg-[#C69349] mx-auto mb-4"></div>
+      <p class="max-w-2xl mx-auto text-lg text-[#796446]/80">
+        En La Fortuna de San Carlos, rodeadas del majestuoso Volcán Arenal y naturaleza pura.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      
+      <!-- Map Container -->
+      <div data-aos="fade-right">
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+          <!-- Map Header -->
+          <div class="bg-[#796446] text-[#FFF0DA] p-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <div class="w-3 h-3 bg-[#C69349] rounded-full animate-pulse"></div>
+                <h3 class="font-bold">Villas Izu Garden</h3>
+              </div>
+              <span class="text-sm">La Fortuna, Costa Rica</span>
+            </div>
+          </div>
+
+          <!-- Simple Map -->
+          <div class="relative h-80 bg-gradient-to-br from-blue-100 to-green-100">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%221%22 fill=%22%23e5e7eb%22 opacity=%220.2%22/%3E%3C/svg%3E')] bg-repeat opacity-30"></div>
+            
+            <!-- Location Pin -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group">
+              <div class="relative">
+                <div class="absolute inset-0 bg-[#C69349] rounded-full animate-ping opacity-75"></div>
+                <div class="relative w-12 h-12 bg-[#796446] rounded-full flex items-center justify-center shadow-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <!-- Tooltip -->
+                <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-white px-3 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                  <div class="text-sm font-semibold text-[#796446]">Villas Izu Garden</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Nearby Points -->
+            <div class="absolute top-1/4 left-1/4 w-3 h-3 bg-red-500 rounded-full"></div>
+            <div class="absolute bottom-1/3 right-1/4 w-3 h-3 bg-green-500 rounded-full"></div>
+          </div>
+
+          <!-- Map Footer -->
+          <div class="p-4 bg-gray-50">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-sm">
+              <a 
+                href="https://maps.google.com/?q=La+Fortuna+San+Carlos+Costa+Rica" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="flex items-center text-[#796446] hover:text-[#C69349] transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 mr-1">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+                Ver en Google Maps
+              </a>
+              <span class="text-[#796446]/60 text-xs">📍 La Fortuna, Alajuela</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location Info -->
+      <div data-aos="fade-left">
+        <div class="space-y-6">
+          
+          <!-- Address -->
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-[#C69349]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 text-[#C69349]">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-[#796446] mb-2">Dirección</h3>
+                <p class="text-[#796446]/80">
+                  La Fortuna de San Carlos<br/>
+                  Alajuela, 21007<br/>
+                  Costa Rica 🇨🇷
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Distances -->
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <h3 class="text-lg font-bold text-[#796446] mb-4">Distancias principales</h3>
+            <div class="space-y-3">
+              
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                  <span class="text-lg">🌋</span>
+                  <span class="text-[#796446]">Volcán Arenal</span>
+                </div>
+                <span class="font-semibold text-[#C69349]">10min</span>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                  <span class="text-lg">♨️</span>
+                  <span class="text-[#796446]">Aguas Termales</span>
+                </div>
+                <span class="font-semibold text-[#C69349]">15min</span>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                  <span class="text-lg">✈️</span>
+                  <span class="text-[#796446]">Aeropuerto SJO</span>
+                </div>
+                <span class="font-semibold text-[#C69349]">3h</span>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                  <span class="text-lg">🏙️</span>
+                  <span class="text-[#796446]">San José Centro</span>
+                </div>
+                <span class="font-semibold text-[#C69349]">2h 45min</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transportation -->
+          <div class="bg-[#796446] rounded-xl p-6 shadow-lg text-[#FFF0DA]">
+            <h3 class="text-lg font-bold mb-4 flex items-center">
+              <span class="mr-2">🚗</span>
+              Cómo llegar
+            </h3>
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start space-x-3">
+                <span class="text-[#C69349] mt-1">•</span>
+                <div>
+                  <p class="font-medium">Transporte privado desde SJO</p>
+                  <p class="text-[#FFF0DA]/80">Incluido en tu reserva</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <span class="text-[#C69349] mt-1">•</span>
+                <div>
+                  <p class="font-medium">Autobús San José - La Fortuna</p>
+                  <p class="text-[#FFF0DA]/80">Terminal 7-10 (4h 30min)</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <span class="text-[#C69349] mt-1">•</span>
+                <div>
+                  <p class="font-medium">Coche de alquiler 4x4</p>
+                  <p class="text-[#FFF0DA]/80">Parking privado disponible</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="text-center mt-16" data-aos="fade-up">
+      <div class="bg-gradient-to-r from-[#C69349]/10 to-[#796446]/10 rounded-2xl p-8">
+        <h3 class="text-xl font-bold text-[#796446] mb-4">¿Necesitas ayuda con el transporte?</h3>
+        <p class="text-[#796446]/80 mb-6 max-w-xl mx-auto">
+          Nuestro concierge puede organizar tu traslado desde el aeropuerto o cualquier punto de Costa Rica.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#contact" class="bg-[#C69349] text-[#FFF0DA] px-6 py-3 rounded-lg hover:bg-[#C69349]/90 transition-colors font-medium">
+            Solicitar Transporte
+          </a>
+          <a 
+            href="https://maps.google.com/maps/dir//La+Fortuna+San+Carlos+Alajuela+Costa+Rica" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="border-2 border-[#C69349] text-[#C69349] px-6 py-3 rounded-lg hover:bg-[#C69349]/5 transition-colors font-medium"
+          >
+            Ver Direcciones
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

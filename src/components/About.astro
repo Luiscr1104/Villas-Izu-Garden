@@ -1,50 +1,56 @@
-<section id="about" class="py-20 bg-[#FFF0DA]">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2">
-          <h2 class="text-3xl font-serif font-bold text-[#796446] mb-6">Sobre Villas Izu Garden</h2>
-          <p class="text-lg mb-4">
-            Villas Izu Garden es un refugio exclusivo donde el lujo se encuentra con la naturaleza. Nuestras villas, diseñadas con un estilo arquitectónico único, se integran perfectamente con el entorno natural.
-          </p>
-          <p class="text-lg mb-6">
-            Cada detalle ha sido cuidadosamente pensado para ofrecer una experiencia inolvidable, desde la decoración hasta los servicios personalizados que ofrecemos a nuestros huéspedes.
-          </p>
-          <div class="flex flex-wrap gap-4">
-            <div class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-[#C69349]">
+<section id="about" class="relative overflow-hidden bg-[#FFF0DA] py-24">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="w-72 h-72 bg-[#C69349]/10 rounded-full blur-3xl absolute top-0 -left-16 animate-pulse"></div>
+    <div class="w-80 h-80 bg-[#C69349]/10 rounded-full blur-2xl absolute bottom-0 -right-24 animate-pulse delay-1000"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      
+      <!-- Texto -->
+      <div data-aos="fade-right">
+        <h2 class="text-4xl font-serif font-bold text-[#796446] mb-6 leading-tight">
+          Sobre <span class="text-[#C69349]">Villas Izu Garden</span>
+        </h2>
+        <p class="text-base sm:text-lg text-[#5a4b3d] mb-4">
+          Villas Izu Garden es un refugio exclusivo donde el lujo se encuentra con la naturaleza. Nuestras villas, diseñadas con un estilo arquitectónico único, se integran perfectamente con el entorno natural.
+        </p>
+        <p class="text-base sm:text-lg text-[#5a4b3d] mb-6">
+          Cada detalle ha sido cuidadosamente pensado para ofrecer una experiencia inolvidable, desde la decoración hasta los servicios personalizados que ofrecemos a nuestros huéspedes.
+        </p>
+
+        <!-- Beneficios -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+          {[
+            'Diseño sustentable',
+            'Privacidad absoluta',
+            'Experiencias únicas',
+            'Servicio personalizado'
+          ].map(text => (
+            <div class="flex items-center gap-3 group transition-all duration-300 hover:scale-105">
+              <svg class="w-6 h-6 text-[#C69349] group-hover:rotate-6 transition" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <span>Diseño sustentable</span>
+              <span class="text-[#5a4b3d]">{text}</span>
             </div>
-            <div class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-[#C69349]">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span>Privacidad absoluta</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-[#C69349]">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span>Experiencias únicas</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-[#C69349]">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span>Servicio personalizado</span>
-            </div>
-          </div>
-        </div>
-        <div class="md:w-1/2">
-          <div class="relative">
-            <div class="absolute -bottom-6 -left-6 bg-[#C69349] text-[#FFF0DA] p-4 rounded shadow-lg">
-              <p class="text-lg font-serif font-medium">+10 años de excelencia</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
+
+      <!-- Imagen con badge -->
+      <div class="relative" data-aos="fade-left">
+        <img 
+          src="/images/villa1.png" 
+          alt="Interior de Villas Izu Garden" 
+          class="w-full h-auto rounded-2xl shadow-xl object-cover border border-[#C69349]/30"
+        />
+        <div class="absolute -bottom-6 -left-6 bg-[#C69349] text-[#FFF0DA] px-6 py-3 rounded-md shadow-xl">
+          <p class="text-lg font-serif font-medium tracking-wide">
+            +10 años de excelencia
+          </p>
+        </div>
+      </div>
+
     </div>
-  </section>
-  
-  
+  </div>
+</section>
