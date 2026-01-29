@@ -4,36 +4,71 @@ import villa2 from "@/assets/villa2.png";
 import villa3 from "@/assets/villa3.png";
 ---
 
-<section id="villas" class="py-20 bg-[#796446] text-[#FFF0DA]">
+<section id="villas" class="py-24 bg-primary-dark text-primary-light">
   <div class="container mx-auto px-4">
-    <div class="text-center mb-16" data-aos="fade-up">
-      <h2 class="text-3xl font-serif font-bold mb-4">Nuestras Villas</h2>
-      <p class="max-w-2xl mx-auto text-lg">
-        Descubre nuestras exclusivas villas, cada una con su carácter único y diseñadas para brindar una experiencia inigualable.
+    <div class="text-center mb-20" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 italic">
+        Villas de Lujo en La Fortuna
+      </h2>
+      <p
+        class="max-w-3xl mx-auto text-lg md:text-xl font-light opacity-90 leading-relaxed"
+      >
+        Santuarios privados diseñados con alma cosmopolita y corazón natural.
+        Cada villa es una oda a la tranquilidad.
       </p>
     </div>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       <!-- Villa 1 -->
-      <div 
-        class="bg-[#FFF0DA]/10 rounded-lg overflow-hidden hover:shadow-xl transition-shadow backdrop-blur-sm"
-        data-aos="zoom-in" data-aos-delay="100"
+      <div
+        class="group bg-white/5 rounded-3xl overflow-hidden hover:shadow-premium transition-all duration-500 border border-white/10 hover:-translate-y-3"
+        data-aos="fade-up"
+        data-aos-delay="100"
       >
-        <img src={villa1.src} alt="Villa 1" class="w-full h-64 object-cover" />
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Villa Izu Garden 1</h3>
-          <p class="text-[#FFF0DA]/80 mb-4">
-            Una villa de 2 habitaciones con vistas panorámicas y piscina privada, perfecta para parejas o pequeñas familias.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-[#C69349]/20 px-3 py-1 rounded-full text-sm">2 Habitaciones</span>
-            <span class="bg-[#C69349]/20 px-3 py-1 rounded-full text-sm">Piscina privada</span>
-            <span class="bg-[#C69349]/20 px-3 py-1 rounded-full text-sm">Vistas panorámicas</span>
+        <div class="overflow-hidden relative">
+          <img
+            src={villa1.src}
+            alt="Villa Sakura - Villa de Lujo con Piscina Privada Infinity en San Carlos"
+            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div
+            class="absolute top-4 right-4 glass px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-primary-dark"
+          >
+            Favorito
           </div>
-          <div class="flex justify-between items-center">
-            <span class="text-xl font-bold">$350 <span class="text-sm font-normal">/ noche</span></span>
-            <a href="#availability" class="bg-[#C69349] text-[#FFF0DA] px-4 py-2 rounded hover:bg-[#C69349]/80 transition-colors">
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-serif font-bold mb-3">Villa Sakura</h3>
+          <p class="text-primary-light/70 mb-6 font-light leading-relaxed">
+            Elegancia minimalista con vistas al amanecer. Un espacio íntimo con
+            piscina privada de borde infinito.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span
+              class="glass px-3 py-1 rounded-lg text-xs font-semibold text-primary-light border border-white/10"
+              >2 Suites</span
+            >
+            <span
+              class="glass px-3 py-1 rounded-lg text-xs font-semibold text-primary-light border border-white/10"
+              >Piscina Infinity</span
+            >
+            <span
+              class="glass px-3 py-1 rounded-lg text-xs font-semibold text-primary-light border border-white/10"
+              >Vistas Volcánicas</span
+            >
+          </div>
+          <div
+            class="flex justify-between items-center border-t border-white/10 pt-6"
+          >
+            <span class="text-2xl font-serif font-bold text-accent"
+              >$350 <span class="text-sm font-light text-primary-light/50"
+                >/ noche</span
+              ></span
+            >
+            <a
+              href="#availability"
+              class="bg-primary text-primary-light px-6 py-2 rounded-full font-bold hover:bg-accent transition-all duration-300"
+            >
               Reservar
             </a>
           </div>
@@ -41,24 +76,55 @@ import villa3 from "@/assets/villa3.png";
       </div>
 
       <!-- Villa 2 -->
-      <div 
-        class="bg-[#FFF0DA]/10 rounded-lg overflow-hidden hover:shadow-xl transition-shadow backdrop-blur-sm"
-        data-aos="zoom-in" data-aos-delay="200"
+      <div
+        class="group bg-white/5 rounded-3xl overflow-hidden hover:shadow-premium transition-all duration-500 border border-white/10 hover:-translate-y-3"
+        data-aos="fade-up"
+        data-aos-delay="200"
       >
-        <img src={villa2.src} alt="Villa 2" class="w-full h-64 object-cover" />
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Villa Izu Garden 2</h3>
-          <p class="text-[#FFF0DA]/80 mb-4">
-            Espaciosa villa de 3 habitaciones con jardín japonés privado y área de meditación, ideal para desconectar.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-[#C69349]/20 px-3 py-1 rounded-full text-sm">3 Habitaciones</span>
-            <span class="bg-[#C69349]/20 px-3 py-1 rounded-full text-sm">Jardín japonés</span>
-            <span class="bg-[#C69349]/20 px-3 py-1 rounded-full text-sm">Área de meditación</span>
+        <div class="overflow-hidden relative">
+          <img
+            src={villa2.src}
+            alt="Villa Zen - Arquitectura de Lujo y Onsen Privado en Costa Rica"
+            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div
+            class="absolute top-4 right-4 glass px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-primary-dark"
+          >
+            Zen Style
           </div>
-          <div class="flex justify-between items-center">
-            <span class="text-xl font-bold">$450 <span class="text-sm font-normal">/ noche</span></span>
-            <a href="#availability" class="bg-[#C69349] text-[#FFF0DA] px-4 py-2 rounded hover:bg-[#C69349]/80 transition-colors">
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-serif font-bold mb-3">Villa Zen</h3>
+          <p class="text-primary-light/70 mb-6 font-light leading-relaxed">
+            Arquitectura japonesa modernista rodeada de jardines de piedra y
+            bambú. El refugio definitivo de paz.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span
+              class="glass px-3 py-1 rounded-lg text-xs font-semibold text-primary-light border border-white/10"
+              >3 Suites</span
+            >
+            <span
+              class="glass px-3 py-1 rounded-lg text-xs font-semibold text-primary-light border border-white/10"
+              >Jardín Privado</span
+            >
+            <span
+              class="glass px-3 py-1 rounded-lg text-xs font-semibold text-primary-light border border-white/10"
+              >Onsen Privado</span
+            >
+          </div>
+          <div
+            class="flex justify-between items-center border-t border-white/10 pt-6"
+          >
+            <span class="text-2xl font-serif font-bold text-accent"
+              >$450 <span class="text-sm font-light text-primary-light/50"
+                >/ noche</span
+              ></span
+            >
+            <a
+              href="#availability"
+              class="bg-primary text-primary-light px-6 py-2 rounded-full font-bold hover:bg-accent transition-all duration-300"
+            >
               Reservar
             </a>
           </div>
@@ -66,24 +132,55 @@ import villa3 from "@/assets/villa3.png";
       </div>
 
       <!-- Villa 3 -->
-      <div 
-        class="bg-[#FFF0DA]/10 rounded-lg overflow-hidden hover:shadow-xl transition-shadow backdrop-blur-sm"
-        data-aos="zoom-in" data-aos-delay="300"
+      <div
+        class="group bg-white/5 rounded-3xl overflow-hidden hover:shadow-premium transition-all duration-500 border border-white/10 hover:-translate-y-3"
+        data-aos="fade-up"
+        data-aos-delay="300"
       >
-        <img src={villa3.src} alt="Villa 3" class="w-full h-64 object-cover" />
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Villa Izu Garden 3</h3>
-          <p class="text-[#FFF0DA]/80 mb-4">
-            Nuestra villa más lujosa con 4 habitaciones, spa privado, piscina infinita y servicio de chef personalizado.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-[#C69349]/20 px-3 py-1 rounded-full text-sm">4 Habitaciones</span>
-            <span class="bg-[#C69349]/20 px-3 py-1 rounded-full text-sm">Spa privado</span>
-            <span class="bg-[#C69349]/20 px-3 py-1 rounded-full text-sm">Piscina infinita</span>
+        <div class="overflow-hidden relative">
+          <img
+            src={villa3.src}
+            alt="Villa Harmony - Suite de Lujo con Vistas al Volcán Arenal"
+            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div
+            class="absolute top-4 right-4 glass px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-primary-dark"
+          >
+            Ultimate
           </div>
-          <div class="flex justify-between items-center">
-            <span class="text-xl font-bold">$650 <span class="text-sm font-normal">/ noche</span></span>
-            <a href="#availability" class="bg-[#C69349] text-[#FFF0DA] px-4 py-2 rounded hover:bg-[#C69349]/80 transition-colors">
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-serif font-bold mb-3">Villa Harmony</h3>
+          <p class="text-primary-light/70 mb-6 font-light leading-relaxed">
+            Nuestra master suite. Lujo sin límites, spa privado, cava de vinos y
+            vistas de 360 grados al paraíso.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span
+              class="glass px-3 py-1 rounded-lg text-xs font-semibold text-primary-light border border-white/10"
+              >4 Suites</span
+            >
+            <span
+              class="glass px-3 py-1 rounded-lg text-xs font-semibold text-primary-light border border-white/10"
+              >Spa Privado</span
+            >
+            <span
+              class="glass px-3 py-1 rounded-lg text-xs font-semibold text-primary-light border border-white/10"
+              >Chef de Rango</span
+            >
+          </div>
+          <div
+            class="flex justify-between items-center border-t border-white/10 pt-6"
+          >
+            <span class="text-2xl font-serif font-bold text-accent"
+              >$650 <span class="text-sm font-light text-primary-light/50"
+                >/ noche</span
+              ></span
+            >
+            <a
+              href="#availability"
+              class="bg-primary text-primary-light px-6 py-2 rounded-full font-bold hover:bg-accent transition-all duration-300"
+            >
               Reservar
             </a>
           </div>
@@ -91,9 +188,12 @@ import villa3 from "@/assets/villa3.png";
       </div>
     </div>
 
-    <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
-      <a href="#availability" class="inline-block border-2 border-[#FFF0DA] text-[#FFF0DA] px-6 py-3 rounded-lg hover:bg-[#FFF0DA]/10 transition-colors">
-        Ver todas las villas
+    <div class="text-center mt-20" data-aos="fade-up">
+      <a
+        href="#availability"
+        class="inline-block border border-primary-light/30 text-primary-light px-10 py-4 rounded-full hover:bg-primary-light hover:text-primary-dark transition-all duration-500 font-bold uppercase tracking-widest text-sm"
+      >
+        Conocer Disponibilidad
       </a>
     </div>
   </div>

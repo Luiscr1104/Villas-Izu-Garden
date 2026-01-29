@@ -3,44 +3,80 @@ import villaImage from "@/assets/villas.jpg";
 import logo2 from "@/assets/logo2.png";
 ---
 
-<section class="relative pt-20 h-screen flex items-center">
-    <div class="absolute inset-0 z-0">
-        <img 
-          src={villaImage.src} 
-          alt="Villas Izu Garden" 
-          class="w-full h-full object-cover"
-        />
-        <div class="absolute inset-0 bg-[#796446]/40"></div>
-      </div>
-    
-    <div class="container mx-auto px-4 z-10 text-center">
-        <!-- Agregar el logo aquí -->
-        <img 
-        src={logo2.src} 
-        alt="Logo Villas Izu Garden"
-        class="mx-auto w-36 h-auto mb-4"
-        />
-      <h1 class="text-4xl md:text-6xl font-serif font-bold text-primary-light mb-6">
-        Villas Izu Garden
-      </h1>
-      <p class="text-xl md:text-2xl text-primary-light mb-8 max-w-2xl mx-auto">
-        Una experiencia de lujo en perfecta armonía con la naturaleza
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a 
-          href="#availability" 
-          class="bg-[#C69349] text-primary-light px-8 py-3 rounded font-medium hover:bg-[#C69349]/90 transition-colors"
-        >
-          Reservar Ahora
-        </a>
-        <a 
-          href="#villas" 
-          class="bg-transparent border-2 border-primary-light text-primary-light px-8 py-3 rounded font-medium hover:bg-primary-light/10 transition-colors"
-        >
-          Explorar Villas
-        </a>
-      </div>
+<section class="relative pt-20 h-screen flex items-center overflow-hidden">
+  <!-- Background Image with Refined Gradient Overlay -->
+  <div class="absolute inset-0 z-0">
+    <img
+      src={villaImage.src}
+      alt="Villas Izu Garden en La Fortuna de San Carlos - Santuario de Lujo"
+      class="w-full h-full object-cover scale-105"
+      style="filter: brightness(0.7);"
+    />
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-primary-dark/60 via-transparent to-primary-dark/80"
+    >
     </div>
-  </section>
-  
-  
+  </div>
+
+  <div class="container mx-auto px-4 z-10 text-center">
+    <!-- Logo with subtle animation -->
+    <div class="animate-entrance" style="animation-delay: 0.1s;">
+      <img
+        src={logo2.src}
+        alt="Logo Villas Izu Garden"
+        class="mx-auto w-32 md:w-40 h-auto mb-8 drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+      />
+    </div>
+
+    <h1
+      class="text-5xl md:text-7xl font-serif font-bold text-primary-light mb-6 tracking-tight animate-entrance"
+      style="animation-delay: 0.3s;"
+    >
+      Villas Izu Garden La Fortuna
+    </h1>
+
+    <p
+      class="text-xl md:text-2xl text-primary-light/90 mb-10 max-w-2xl mx-auto font-light leading-relaxed animate-entrance"
+      style="animation-delay: 0.5s;"
+    >
+      Santuario de lujo en el corazón de la naturaleza, diseñado para el alma
+      viajera.
+    </p>
+
+    <div
+      class="flex flex-col sm:flex-row justify-center gap-6 animate-entrance"
+      style="animation-delay: 0.7s;"
+    >
+      <a
+        href="#availability"
+        class="bg-primary text-primary-light px-10 py-4 rounded-full font-semibold shadow-premium hover:bg-accent transition-all duration-300 hover:scale-105 active:scale-95"
+      >
+        Reservar Ahora
+      </a>
+      <a
+        href="#villas"
+        class="glass text-primary-light px-10 py-4 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 border border-white/30 hover:scale-105 active:scale-95"
+      >
+        Explorar Villas
+      </a>
+    </div>
+  </div>
+
+  <!-- Decorative element -->
+  <div
+    class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50"
+  >
+    <svg
+      class="w-6 h-6 text-primary-light"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 14l-7 7-7-7"></path>
+    </svg>
+  </div>
+</section>

@@ -1,8 +1,11 @@
 ---
-import '@/styles/global.css'
-import Footer from '../components/Footer.astro'
+import "@/styles/global.css";
+import Footer from "../components/Footer.astro";
+import logo2 from "@/assets/logo2.png";
 
-const { title = "Villas Izu Garden, totalmente equipadas - 15 minutos de la Fortuna de San Carlos." } = Astro.props
+const {
+	title = "Villas Izu Garden, totalmente equipadas - 15 minutos de la Fortuna de San Carlos.",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -11,35 +14,240 @@ const { title = "Villas Izu Garden, totalmente equipadas - 15 minutos de la Fort
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon2.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://unpkg.com/aos@next/dist/aos.js" defer onload="AOS.init({ once: true });"></script>
+		<script
+			src="https://unpkg.com/aos@next/dist/aos.js"
+			defer
+			onload="AOS.init({ once: true, duration: 1000, offset: 100 });"
+		></script>
 
+		<meta
+			name="description"
+			content="Villas Izu Garden: Santuario de lujo y paz en La Fortuna, San Carlos. Villas totalmente equipadas a solo 15 minutos del Volcán Arenal, Costa Rica."
+		/>
+		<meta
+			name="keywords"
+			content="Villas Izu Garden, La Fortuna, San Carlos, Arenal, Costa Rica, Lujo, Villas, Hospedaje, Volcán Arenal"
+		/>
+		<meta name="author" content="Villas Izu Garden" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://villasizugarden.com/" />
+		<meta property="og:title" content={title} />
+		<meta
+			property="og:description"
+			content="Santuario de lujo y paz en La Fortuna, San Carlos. Villas totalmente equipadas a solo 15 minutos del Volcán Arenal."
+		/>
+		<meta property="og:image" content="/og-image.jpg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://villasizugarden.com/" />
+		<meta property="twitter:title" content={title} />
+		<meta
+			property="twitter:description"
+			content="Santuario de lujo y paz en La Fortuna, San Carlos. Villas totalmente equipadas a solo 15 minutos del Volcán Arenal."
+		/>
+		<meta property="twitter:image" content="/og-image.jpg" />
+
+		<link rel="canonical" href="https://villasizugarden.com/" />
 		<title>{title}</title>
 	</head>
+
 	<body>
-		<header class="fixed w-full bg-[#FFF0DA]/90 backdrop-blur-sm z-50 shadow-sm">
-			<div class="container mx-auto px-4 py-4 flex justify-between items-center">
-			  <a href="/" class="text-2xl font-serif font-bold text-[#796446]">
-				Villas Izu Garden
-			  </a>
-			  <nav class="hidden md:flex space-x-8">
-				<a href="#about" class="text-[#796446] hover:text-[#C69349] transition-colors">Nosotros</a>
-				<a href="#villas" class="text-[#796446] hover:text-[#C69349] transition-colors">Villas</a>
-				<a href="#amenities" class="text-[#796446] hover:text-[#C69349] transition-colors">Amenidades</a>
-				<a href="#availability" class="text-[#796446] hover:text-[#C69349] transition-colors">Disponibilidad</a>
-				<a href="#contact" class="text-[#796446] hover:text-[#C69349] transition-colors">Contacto</a>
-			  </nav>
-			  <button class="md:hidden text-[#796446]">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-				  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-				</svg>
-			  </button>
+		<header
+			id="main-header"
+			class="fixed w-full transition-all duration-500 z-50 py-6"
+		>
+			<div
+				class="container mx-auto px-4 flex justify-between items-center relative"
+			>
+				<a
+					href="/"
+					class="flex items-center gap-3 text-2xl font-serif font-bold text-primary-dark group"
+				>
+					<div
+						class="w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-500"
+					>
+						<img
+							src={logo2.src}
+							alt="Villas Izu Garden Logo"
+							class="w-full h-full object-contain"
+						/>
+					</div>
+					<span
+						class="tracking-tight hover:text-primary transition-colors"
+						>Villas Izu Garden</span
+					>
+				</a>
+
+				<!-- Desktop Navigation -->
+				<nav class="hidden md:flex items-center space-x-10">
+					{
+						[
+							{ href: "#about", label: "Nosotros" },
+							{ href: "#villas", label: "Villas" },
+							{ href: "#amenities", label: "Amenidades" },
+							{ href: "#availability", label: "Disponibilidad" },
+							{ href: "#contact", label: "Contacto" },
+						].map((item) => (
+							<a
+								href={item.href}
+								class="text-primary-dark font-medium tracking-wide hover:text-primary transition-colors text-sm uppercase"
+							>
+								{item.label}
+							</a>
+						))
+					}
+					<a
+						href="https://wa.me/50686544883"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="bg-primary text-primary-light px-6 py-2 rounded-full text-sm font-bold shadow-premium hover:bg-primary-dark transition-all duration-300"
+					>
+						Reservar
+					</a>
+				</nav>
+
+				<!-- Mobile Menu Button -->
+				<button
+					id="mobile-menu-btn"
+					class="md:hidden text-primary-dark p-2 focus:outline-none glass rounded-xl shadow-sm"
+					aria-label="Menu"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-7 h-7"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+						></path>
+					</svg>
+				</button>
 			</div>
-		  </header>
+
+			<!-- Mobile Menu Overlay -->
+			<div
+				id="mobile-menu"
+				class="hidden md:hidden fixed inset-0 top-[80px] bg-primary-light/95 backdrop-blur-xl z-50 transition-all duration-300"
+			>
+				<nav class="flex flex-col p-8 space-y-6">
+					{
+						[
+							{ href: "#about", label: "Nosotros" },
+							{ href: "#villas", label: "Villas" },
+							{ href: "#amenities", label: "Amenidades" },
+							{ href: "#availability", label: "Disponibilidad" },
+							{ href: "#contact", label: "Contacto" },
+						].map((item) => (
+							<a
+								href={item.href}
+								class="text-3xl font-serif font-bold text-primary-dark hover:text-primary transition-colors mobile-link"
+							>
+								{item.label}
+							</a>
+						))
+					}
+				</nav>
+			</div>
+		</header>
+
+		<script>
+			const btn = document.getElementById("mobile-menu-btn");
+			const menu = document.getElementById("mobile-menu");
+			const links = document.querySelectorAll(".mobile-link");
+			const header = document.getElementById("main-header");
+
+			// Scroll behavior
+			window.addEventListener("scroll", () => {
+				if (window.scrollY > 50) {
+					header?.classList.add(
+						"bg-white/90",
+						"backdrop-blur-lg",
+						"shadow-sm",
+						"py-3",
+					);
+					header?.classList.remove("py-6");
+				} else {
+					header?.classList.remove(
+						"bg-white/90",
+						"backdrop-blur-lg",
+						"shadow-sm",
+						"py-3",
+					);
+					header?.classList.add("py-6");
+				}
+			});
+
+			if (btn && menu) {
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+					document.body.classList.toggle("overflow-hidden");
+				});
+
+				// Close menu when clicking a link
+				links.forEach((link) => {
+					link.addEventListener("click", () => {
+						menu.classList.add("hidden");
+						document.body.classList.remove("overflow-hidden");
+					});
+				});
+
+				// Close menu when clicking outside
+				document.addEventListener("click", (e) => {
+					if (
+						menu &&
+						btn &&
+						!menu.contains(e.target as Node) &&
+						!btn.contains(e.target as Node)
+					) {
+						menu.classList.add("hidden");
+						document.body.classList.remove("overflow-hidden");
+					}
+				});
+			}
+		</script>
 		<main>
 			<slot />
 		</main>
 		<Footer />
+
+		<!-- Floating WhatsApp Button -->
+		<a
+			href="https://wa.me/50686544883"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group flex items-center gap-1"
+			aria-label="Contactar por WhatsApp"
+		>
+			<span
+				class="max-w-0 overflow-hidden group-hover:max-w-[200px] transition-all duration-500 whitespace-nowrap font-bold uppercase tracking-widest text-[10px] sm:text-xs"
+			>
+				¿Necesitas ayuda?
+			</span>
+			<svg
+				class="w-7 h-7 sm:w-8 sm:h-8"
+				fill="currentColor"
+				viewBox="0 0 24 24"
+			>
+				<path
+					d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.385-4.326 9.771-9.71 9.775z"
+				></path>
+			</svg>
+		</a>
 	</body>
 </html>
 

@@ -1,56 +1,125 @@
-<section id="about" class="relative overflow-hidden bg-[#FFF0DA] py-24">
-  <div class="absolute inset-0 pointer-events-none">
-    <div class="w-72 h-72 bg-[#C69349]/10 rounded-full blur-3xl absolute top-0 -left-16 animate-pulse"></div>
-    <div class="w-80 h-80 bg-[#C69349]/10 rounded-full blur-2xl absolute bottom-0 -right-24 animate-pulse delay-1000"></div>
+<section id="about" class="relative overflow-hidden bg-primary-light/30 py-32">
+  <!-- Decorative Background Elements -->
+  <div class="absolute inset-0 pointer-events-none opacity-40">
+    <div
+      class="w-96 h-96 bg-accent/20 rounded-full blur-[100px] absolute -top-20 -left-20 animate-pulse"
+    >
+    </div>
+    <div
+      class="w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] absolute -bottom-40 -right-40 animate-pulse delay-1000"
+    >
+    </div>
   </div>
 
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-      
-      <!-- Texto -->
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-20">
+      <!-- Texto Content -->
       <div data-aos="fade-right">
-        <h2 class="text-4xl font-serif font-bold text-[#796446] mb-6 leading-tight">
-          Sobre <span class="text-[#C69349]">Villas Izu Garden</span>
+        <h2
+          class="text-5xl font-serif font-bold text-primary-dark mb-8 leading-tight italic"
+        >
+          Sobre <span class="text-primary">Villas Izu Garden</span>
         </h2>
-        <p class="text-base sm:text-lg text-[#5a4b3d] mb-4">
-          Villas Izu Garden es un refugio exclusivo donde el lujo se encuentra con la naturaleza. Nuestras villas, diseñadas con un estilo arquitectónico único, se integran perfectamente con el entorno natural.
-        </p>
-        <p class="text-base sm:text-lg text-[#5a4b3d] mb-6">
-          Cada detalle ha sido cuidadosamente pensado para ofrecer una experiencia inolvidable, desde la decoración hasta los servicios personalizados que ofrecemos a nuestros huéspedes.
-        </p>
+        <div
+          class="space-y-6 text-lg text-primary-dark/80 font-light leading-relaxed"
+        >
+          <p>
+            Villas Izu Garden es un refugio exclusivo donde el lujo silencioso
+            se encuentra con la naturaleza vibrante. Nuestras villas son el
+            resultado de un diseño arquitectónico que busca la simbiosis
+            perfecta entre el confort humano y el respeto ambiental.
+          </p>
+          <p>
+            Nacimos del deseo de crear un espacio donde el tiempo se detiene.
+            Cada detalle, desde la selección de maderas nobles hasta los
+            servicios de conserjería privada, está orientado a sanar el espíritu
+            y deleitar los sentidos.
+          </p>
+        </div>
 
-        <!-- Beneficios -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-          {[
-            'Diseño sustentable',
-            'Privacidad absoluta',
-            'Experiencias únicas',
-            'Servicio personalizado'
-          ].map(text => (
-            <div class="flex items-center gap-3 group transition-all duration-300 hover:scale-105">
-              <svg class="w-6 h-6 text-[#C69349] group-hover:rotate-6 transition" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span class="text-[#5a4b3d]">{text}</span>
-            </div>
-          ))}
+        <!-- Beneficios with Icons -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
+          {
+            [
+              {
+                tag: "Diseño Sustentable",
+                icon: "M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582",
+              },
+              {
+                tag: "Privacidad Absoluta",
+                icon: "M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z",
+              },
+              {
+                tag: "Experiencias Únicas",
+                icon: "M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0l-4.725 2.885a.562.562 0 01-.84-.61l1.285-5.385a.563.563 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z",
+              },
+              {
+                tag: "Servicio Concierge",
+                icon: "M15.59 14.37a6 6 0 01-5.84 7.38v-4.8a3.48 3.48 0 002.04-1.35 6 6 0 013.8 0zM7.5 15h9l-1.5-4.5h-6L7.5 15z",
+              },
+            ].map((item) => (
+              <div class="flex items-center gap-4 group cursor-default">
+                <div class="w-12 h-12 rounded-2xl bg-white shadow-premium flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d={item.icon}
+                    />
+                  </svg>
+                </div>
+                <span class="text-primary-dark font-medium tracking-wide">
+                  {item.tag}
+                </span>
+              </div>
+            ))
+          }
         </div>
       </div>
 
-      <!-- Imagen con badge -->
-      <div class="relative" data-aos="fade-left">
-        <img 
-          src="/images/villa1.png" 
-          alt="Interior de Villas Izu Garden" 
-          class="w-full h-auto rounded-2xl shadow-xl object-cover border border-[#C69349]/30"
+      <!-- Imagen Showcase with Glass Badge -->
+      <div class="relative group" data-aos="fade-left">
+        <div
+          class="absolute -inset-4 bg-primary/5 rounded-[40px] transform group-hover:rotate-2 transition-transform duration-700"
+        >
+        </div>
+        <img
+          src="/images/villa1.png"
+          alt="Atmósfera Villas Izu Garden"
+          class="relative w-full h-[600px] rounded-[32px] shadow-2xl object-cover border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-700"
         />
-        <div class="absolute -bottom-6 -left-6 bg-[#C69349] text-[#FFF0DA] px-6 py-3 rounded-md shadow-xl">
-          <p class="text-lg font-serif font-medium tracking-wide">
-            +10 años de excelencia
+        <div
+          class="absolute -bottom-10 -left-10 glass p-8 rounded-3xl shadow-premium border border-white/40 max-w-[240px] backdrop-blur-xl animate-bounce-slow"
+        >
+          <p class="text-3xl font-serif font-bold text-primary mb-1">+10</p>
+          <p
+            class="text-sm font-semibold text-primary-dark/60 uppercase tracking-widest leading-tight"
+          >
+            Años de Excelencia Turística
           </p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
+
+<style>
+  @keyframes bounce-slow {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  .animate-bounce-slow {
+    animation: bounce-slow 4s ease-in-out infinite;
+  }
+</style>
